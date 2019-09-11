@@ -3,8 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../_install/Gradle/gradle-5.6.2" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -13,6 +14,8 @@
             <option value="$PROJECT_DIR$/lesson004project001BasicViews" />
             <option value="$PROJECT_DIR$/lesson005project001layoutfiles" />
             <option value="$PROJECT_DIR$/lesson006project001layouts" />
+            <option value="$PROJECT_DIR$/lesson007project002LayoutProp" />
+            <option value="$PROJECT_DIR$/test" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
