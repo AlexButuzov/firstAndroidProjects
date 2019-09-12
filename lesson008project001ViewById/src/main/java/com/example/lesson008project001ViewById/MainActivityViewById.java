@@ -1,4 +1,4 @@
-package com.example.lesson007project002viewbyid;
+package com.example.lesson008project001ViewById;
 
 import androidx.appcompat.app.AppCompatActivity;
 
