@@ -1,1 +1,1 @@
-include ':app', ':lesson003project001firstproject', ':lesson004project001BasicViews', ':lesson005project001layoutfiles', ':lesson006project001layouts', ':lesson007project002LayoutProp', ':test'
+include ':app', ':lesson003project001firstproject', ':lesson004project001BasicViews', ':lesson005project001layoutfiles', ':lesson006project001layouts', ':lesson007project002LayoutProp', ':test', ':lesson007project002ViewById'
