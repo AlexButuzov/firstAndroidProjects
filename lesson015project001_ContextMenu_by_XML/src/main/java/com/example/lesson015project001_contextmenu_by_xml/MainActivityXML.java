@@ -1,4 +1,4 @@
-package com.example.lesson015project001_contextmenu;
+package com.example.lesson015project001_contextmenu_by_xml;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivityXML extends AppCompatActivity {
     final int MENU_COLOR_RED = 1;
     final int MENU_COLOR_GREEN = 2;
     final int MENU_COLOR_BLUE = 3;
@@ -21,13 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvColor, tvSize;
 
-    /**
-     * Called when the activity is first created.
-     */
+    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_xml);
 
         tvColor = (TextView) findViewById(R.id.tvColor);
         tvSize = (TextView) findViewById(R.id.tvSize);
@@ -43,14 +40,10 @@ public class MainActivity extends AppCompatActivity {
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.tvColor:
-                menu.add(0, MENU_COLOR_RED, 0, "Red");
-                menu.add(0, MENU_COLOR_GREEN, 0, "Green");
-                menu.add(0, MENU_COLOR_BLUE, 0, "Blue");
+                getMenuInflater().inflate(R.menu.context_menu_color, menu);
                 break;
             case R.id.tvSize:
-                menu.add(0, MENU_SIZE_22, 0, "22");
-                menu.add(0, MENU_SIZE_26, 0, "26");
-                menu.add(0, MENU_SIZE_30, 0, "30");
+                getMenuInflater().inflate(R.menu.context_menu_size, menu);
                 break;
         }
     }
@@ -60,28 +53,28 @@ public class MainActivity extends AppCompatActivity {
         // TODO Auto-generated method stub
         switch (item.getItemId()) {
             // пункты меню для tvColor
-            case MENU_COLOR_RED:
+            case R.id.color_red:
                 tvColor.setTextColor(Color.RED);
                 tvColor.setText("Text color = red");
                 break;
-            case MENU_COLOR_GREEN:
+            case R.id.color_green:
                 tvColor.setTextColor(Color.GREEN);
                 tvColor.setText("Text color = green");
                 break;
-            case MENU_COLOR_BLUE:
+            case R.id.color_blue:
                 tvColor.setTextColor(Color.BLUE);
                 tvColor.setText("Text color = blue");
                 break;
             // пункты меню для tvSize
-            case MENU_SIZE_22:
+            case R.id.size_22:
                 tvSize.setTextSize(22);
                 tvSize.setText("Text size = 22");
                 break;
-            case MENU_SIZE_26:
+            case R.id.size_26:
                 tvSize.setTextSize(26);
                 tvSize.setText("Text size = 26");
                 break;
-            case MENU_SIZE_30:
+            case R.id.size_30:
                 tvSize.setTextSize(30);
                 tvSize.setText("Text size = 30");
                 break;
