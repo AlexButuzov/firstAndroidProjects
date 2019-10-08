@@ -10,14 +10,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivityXML extends AppCompatActivity {
-    final int MENU_COLOR_RED = 1;
-    final int MENU_COLOR_GREEN = 2;
-    final int MENU_COLOR_BLUE = 3;
-
-    final int MENU_SIZE_22 = 4;
-    final int MENU_SIZE_26 = 5;
-    final int MENU_SIZE_30 = 6;
-
     TextView tvColor, tvSize;
 
     /** Called when the activity is first created. */
