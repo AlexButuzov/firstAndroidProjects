@@ -105,8 +105,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         Log.i( TAG, "start onCreateOptionsMenu" );
-        menu.add(0, MENU_RESET_ID, 0, "Reset");
-        menu.add(0, MENU_QUIT_ID, 0, "Quit");
+        menu.add(0, MENU_RESET_ID, 0, "Reset"); //очищает поля ввода
+        menu.add(0, MENU_QUIT_ID, 0, "Quit"); //закрывает приложение
         Log.i( TAG, "finish onCreateOptionsMenu" );
         return super.onCreateOptionsMenu(menu);
     }
