@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntentFilter</string>
+    <string name="get_date">get Date</string>
+    <string name="get_time">get time</string>
+</resources>
