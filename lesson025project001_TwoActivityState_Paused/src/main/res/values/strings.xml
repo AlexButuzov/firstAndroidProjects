@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Activity Paused</string>
+    <string name="hello">hello_string_value</string>
+    <string name="title_activity_two">title_value_act2</string>
+</resources>
