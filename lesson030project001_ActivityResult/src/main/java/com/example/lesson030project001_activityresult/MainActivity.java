@@ -17,8 +17,10 @@ import android.widget.Toast;
  разбираемся, зачем нужны requestCode и resultCode в onActivityResult
  езультат приходит в метод onActivityResult.
  И requestCode используется,
- чтобы отличать друг от друга пришедшие результаты.
+ чтобы отличать друг от друга пришедшие результаты, чтобы точно знать, на какой вызов пришел ответ.
+
  А resultCode – позволяет определить успешно прошел вызов или нет.
+ Если при вызове что-то пошло не так, то вернется системная константа RESULT_CANCELED.
  */
 public class MainActivity extends AppCompatActivity  implements OnClickListener {
 
